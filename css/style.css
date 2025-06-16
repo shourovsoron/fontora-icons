@@ -1,0 +1,42 @@
+i[class^="f-icon"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  mask-size: contain;
+  mask-position: center;
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+}
+
+.f-icon.home {
+  mask: url(../icons/home.svg);
+}
+.f-icon.home-line-regular {
+  mask: url(../icons/home-outline-regular.svg);
+}
+.f-icon.home-line-sharp {
+  mask: url(../icons/home-line-sharp.svg);
+}
+
+.f-icon.home-sharp {
+  mask: url(../icons/home-line-sharp.svg);
+}
+
+.home {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.my-icon-demo-grid {
+  padding: 24px;
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  justify-content: center;
+  place-content: center;
+  text-align: center;
+  column-gap: 24px;
+  row-gap: 24px;
+}
